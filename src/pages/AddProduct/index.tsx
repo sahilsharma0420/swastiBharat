@@ -11,10 +11,10 @@ import {
   InputGroup,
   FormHelp,
 } from "@/components/Base/Form";
-import Alert from "@/components/Base/Alert";
-import Tippy from "@/components/Base/Tippy";
-import products from "@/fakers/products";
-import categories from "@/fakers/categories";
+  import Alert from "@/components/Base/Alert";
+  import Tippy from "@/components/Base/Tippy";
+  import products from "@/fakers/products";
+  import categories from "@/fakers/categories";
 import Button from "@/components/Base/Button";
 import Table from "@/components/Base/Table";
 import { useState } from "react";
@@ -164,6 +164,10 @@ function Main() {
                 </div>
               </div>
             </div>
+
+
+
+
             <div className="flex flex-col p-5 box box--stacked">
               <div className="p-5 border rounded-[0.6rem] border-slate-200/80 dark:border-darkmode-400">
                 <div className="flex items-center pb-5 text-[0.94rem] font-medium border-b border-slate-200/80 dark:border-darkmode-400">

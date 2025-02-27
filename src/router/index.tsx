@@ -60,7 +60,7 @@ import Chart from "../pages/Chart";
 import Slider from "../pages/Slider";
 import ImageZoom from "../pages/ImageZoom";
 import LandingPage from "../pages/LandingPage";
-
+import Classes from "../pages/Classes";
 import Layout from "../themes";
 
 function Router() {
@@ -72,6 +72,10 @@ function Router() {
         {
           path: "/dashboard-SwastiBharat",
           element: <DashboardSwastiBharat />,
+        },
+        {
+          path: "/classes",
+          element: <Classes/>,
         },
         {
           path: "/",

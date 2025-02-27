@@ -34,6 +34,11 @@ const initialState: SideMenuState = {
       title: "Swasti Bharat",
     },
     {
+      icon: "ActivitySquare",
+      pathname: "/classes",
+      title: "Classes ",
+    },
+    {
       icon: "Album",
       pathname: "/dashboard-overview-3",
       title: "Hospital",
