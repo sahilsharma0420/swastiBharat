@@ -39,6 +39,16 @@ const initialState: SideMenuState = {
       title: "Classes ",
     },
     {
+      icon: "ActivitySquare",
+      pathname: "/calender",
+      title: "Calender ",
+    },
+    {
+      icon: "ActivitySquare",
+      pathname: "/wallet",
+      title: "Wallet ",
+    },
+    {
       icon: "Album",
       pathname: "/dashboard-overview-3",
       title: "Hospital",

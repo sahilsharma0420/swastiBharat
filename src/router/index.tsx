@@ -61,6 +61,8 @@ import Slider from "../pages/Slider";
 import ImageZoom from "../pages/ImageZoom";
 import LandingPage from "../pages/LandingPage";
 import Classes from "../pages/Classes";
+import Wallet from "../pages/Wallet";
+import Calender from "../pages/Calender1";
 import Layout from "../themes";
 
 function Router() {
@@ -76,6 +78,14 @@ function Router() {
         {
           path: "/classes",
           element: <Classes/>,
+        },
+        {
+          path: "/calender",
+          element: <Calender />,
+        },
+        {
+          path: "/wallet",
+          element: <Wallet />,
         },
         {
           path: "/",
