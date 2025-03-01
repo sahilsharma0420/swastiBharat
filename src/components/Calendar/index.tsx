@@ -67,6 +67,15 @@ function Main() {
 
   return (
     <div className="full-calendar">
+        <div className="px-5 pb-2 border-b border-dashed">
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <div>
+                    <div className="text-base text-slate-500">Calender</div>
+                
+                  </div>
+                
+                </div>
+              </div>
       <FullCalendar {...options} />
     </div>
   );

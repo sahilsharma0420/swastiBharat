@@ -8,12 +8,13 @@ import Litepicker from "@/components/Base/Litepicker";
 import { useState } from "react";
 import clsx from "clsx";
 import _ from "lodash";
+import Button from "@/components/Base/Button";
 function main() {
   const [generalReportFilter, setGeneralReportFilter] = useState<string>();
 
   return (
     <div className="grid grid-cols-12 gap-y-10 gap-x-6">
-      <div className="flex flex-col col-span-7 2xl:col-span-7 gap-y-10">
+      <div className="flex flex-col col-span-12 md:col-span-12 lg:col-span-7 2xl:col-span-7 gap-y-10">
         <div>
           <div className="p-5 mt-3.5 box box--stacked">
             <div className="flex items-center h-10">
@@ -144,11 +145,28 @@ function main() {
                 </div>
               </div>
             </div>
+
+
+            <div className="flex items-center justify-end text-blue-700 pb-3.5 mb-3.5 border-b border-dashed last:pb-0 last:mb-0 last:border-0">
+            
+            <Button
+                        variant="outline-primary"
+                        className=" mt-4 "
+                      >
+                        <Lucide
+                          icon="ExternalLink"
+                          className="w-4 h-4 mr-2 stroke-[1.3]"
+                        />{" "}
+                        Withdraw
+                      </Button>
+
+          </div>
+
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col col-span-5 2xl:col-span-5">
+      <div className="flex flex-col col-span-12 md:col-span-12 lg:col-span-5 2xl:col-span-5">
         <div className="p-5 mt-3.5 box box--stacked">
           <div className="flex  items-center h-10">
             <div className="text-base font-medium">Transactions History</div>
@@ -478,6 +496,16 @@ function main() {
                   Today, 03.31
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-end text-blue-700 pb-3.5 mb-3.5 border-b border-dashed last:pb-0 last:mb-0 last:border-0">
+            <div className="relative flex items-center">
+              <Lucide
+                icon="ExternalLink"
+                className="absolute inset-y-0 left-0 z-10 w-4 h-4 my-auto ml-3 stroke-[1.3]"
+              />
+              <span className="pl-8">View all transactions</span>
             </div>
           </div>
         </div>

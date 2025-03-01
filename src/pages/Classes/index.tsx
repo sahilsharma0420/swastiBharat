@@ -27,23 +27,20 @@ import {
   FormHelp,
 } from "@/components/Base/Form";
 function main() {
-
   const [timeSlots, setTimeSlots] = useState([
-    { id: 1, time: '10:00 Am - 11:00 Am', from: '10:00 Am', package: '' },
-    { id: 2, time: '10:00 Am - 11:00 Am', from: '10:00 Am', package: '' },
-    { id: 3, time: '10:00 Am - 11:00 Am', from: '10:00 Am', package: '' },
-    { id: 4, time: '10:00 Am - 11:00 Am', from: '10:00 Am', package: '' },
+    { id: 1, time: "10:00 Am - 11:00 Am", from: "10:00 Am", package: "" },
+    { id: 2, time: "10:00 Am - 11:00 Am", from: "10:00 Am", package: "" },
+    { id: 3, time: "10:00 Am - 11:00 Am", from: "10:00 Am", package: "" },
+    { id: 4, time: "10:00 Am - 11:00 Am", from: "10:00 Am", package: "" },
   ]);
 
   const handlePackageChange = (id, value) => {
-    setTimeSlots(prevSlots => 
-      prevSlots.map(slot => 
+    setTimeSlots((prevSlots) =>
+      prevSlots.map((slot) =>
         slot.id === id ? { ...slot, package: value } : slot
       )
     );
   };
-
-
 
   const [phoneNumber, setPhoneNumber] = useState("");
   const [rules, setRules] = useState([
@@ -84,7 +81,7 @@ function main() {
                   Product Information
                 </div>
                 <div className="mt-5">
-                  <Alert
+                  {/* <Alert
                     variant="outline-warning"
                     className="flex items-center px-4 mb-2 bg-warning/5 border-warning/30"
                   >
@@ -117,7 +114,7 @@ function main() {
                         </div>
                       </>
                     )}
-                  </Alert>
+                  </Alert> */}
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
                       <div className="text-left">
@@ -128,97 +125,72 @@ function main() {
                           </div>
                         </div>
                         <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
-                        Select your gender from the options.
+                          Select your gender from the options.
                         </div>
                       </div>
                     </label>
                     <div className="flex-1 w-full mt-3 xl:mt-0">
-                    <div className="flex-1 w-full mt-3 xl:mt-0">
-                      <div className="flex flex-col items-center md:flex-row">
-                        <div className="bg-white w-full px-3 py-2 border rounded-md shadow-sm border-slate-300/60 first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10 dark:bg-darkmode-600">
-                          <FormCheck>
-                            <FormCheck.Input
-                              id="checkbox-switch-4"
-                              type="radio"
-                              value=""
-                            />
-                            <FormCheck.Label htmlFor="checkbox-switch-4">
-                              Individual
-                            </FormCheck.Label>
-                          </FormCheck>
-                        </div>
-                        <div className="bg-white w-full px-3 py-2 border rounded-md shadow-sm border-slate-300/60 first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10 dark:bg-darkmode-600">
-                          <FormCheck>
-                            <FormCheck.Input
-                              id="checkbox-switch-5"
-                              type="radio"
-                              value=""
-                            />
-                            <FormCheck.Label htmlFor="checkbox-switch-5">
-                              Group
-                            </FormCheck.Label>
-                          </FormCheck>
+                      <div className="flex-1 w-full mt-3 xl:mt-0">
+                        <div className="flex flex-col items-center md:flex-row">
+                          <div className="bg-white w-full px-3 py-2 border rounded-md shadow-sm border-slate-300/60 first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10 dark:bg-darkmode-600">
+                            <FormCheck>
+                              <FormCheck.Input
+                                id="checkbox-switch-4"
+                                type="radio"
+                                value=""
+                              />
+                              <FormCheck.Label htmlFor="checkbox-switch-4">
+                                Individual
+                              </FormCheck.Label>
+                            </FormCheck>
+                          </div>
+                          <div className="bg-white w-full px-3 py-2 border rounded-md shadow-sm border-slate-300/60 first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10 dark:bg-darkmode-600">
+                            <FormCheck>
+                              <FormCheck.Input
+                                id="checkbox-switch-5"
+                                type="radio"
+                                value=""
+                              />
+                              <FormCheck.Label htmlFor="checkbox-switch-5">
+                                Group
+                              </FormCheck.Label>
+                            </FormCheck>
+                          </div>
                         </div>
                       </div>
-                    </div>                      
                     </div>
                   </div>
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
                       <div className="text-left">
                         <div className="flex items-center">
-                          <div className="font-medium">Alot Pricing to the  Packages</div>
+                          <div className="font-medium">
+                            Alot Pricing to the  Packages
+                          </div>
                           <div className="ml-2.5 px-2 py-0.5 bg-slate-100 text-slate-500 dark:bg-darkmode-300 dark:text-slate-400 text-xs rounded-md border border-slate-200">
                             Required
                           </div>
                         </div>
                         <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
-                        Enter your full legal name as it appears on your official identification.
+                          Enter your full legal name as it appears on your
+                          official identification.
                         </div>
                       </div>
                     </label>
                     <div className="flex-1 w-full mt-3 xl:mt-0">
-                    <div className="flex flex-col items-center md:flex-row">
-                    <FormInput
-                      type="text"
-                      className="first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
-                      placeholder={"Select  a Package"}
-                    />
-                    <FormSelect className="md:w-36 first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
-                      <option value="office">Packages</option>
-                      <option value="home">Home</option>
-                    </FormSelect>
-                  </div>
+                      <div className="flex flex-col items-center md:flex-row">
+                        <FormInput
+                          type="text"
+                          className="first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
+                          placeholder={"Select  a Package"}
+                        />
+                        <FormSelect className="md:w-36 first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                          <option value="office">Packages</option>
+                          <option value="home">Home</option>
+                        </FormSelect>
+                      </div>
                     </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
@@ -230,272 +202,201 @@ function main() {
                           </div>
                         </div>
                         <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
-                        Use this section to specify the various options, configurations, or variants available for your product.                        </div>
+                          Use this section to specify the various options,
+                          configurations, or variants available for your
+                          product.{" "}
+                        </div>
                       </div>
                     </label>
                     <div className="flex-1 w-full mt-3  p-2 xl:mt-0 box box--stacked">
-                     
+                      <div className="max-w-4xl mx-auto p-4">
+                        <div>
+                          <div className="mb-4 flex items-center space-x-3">
+                            <div className="inline-flex text-xs items-center p-0 m-0 text-gray-700 flex-shrink-0">
+                              <span className="font-medium py-2">
+                                {"Set your working hours"}
+                              </span>
+                            </div>
 
-                    <div className="max-w-4xl mx-auto p-4">
+                            <div className="flex  flex-col items-center md:flex-row">
+                              <FormInput
+                                type="text"
+                                className="first:rounded-b-none w-16 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
+                                placeholder={"From"}
+                              />
+                              <FormSelect className=" w-40 md:w-20   text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                                <option value="office">10 am</option>
+                                <option value="home">11 am</option>
+                              </FormSelect>
+                            </div>
 
+                            <div className="flex  flex-col items-center md:flex-row">
+                              <FormInput
+                                type="text"
+                                className="first:rounded-b-none w-10 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
+                                placeholder={"To"}
+                              />
+                              <FormSelect className="md:w-20 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                                <option value="office">1 pm</option>
+                                <option value="home">2 p</option>
+                              </FormSelect>
+                            </div>
+                          </div>
 
+                          <div className="mb-4 flex items-center space-x-3">
+                            <div className="inline-flex text-xs items-center p-0 m-0 text-gray-700  flex-shrink-0">
+                              <span>{"Duration"}</span>
+                            </div>
+                            <div className="w-48">
+                              <FormSelect>
+                                <option value="daily">Minutes</option>
+                                <option value="weekly">Hours</option>
+                              </FormSelect>
+                            </div>
 
+                            <Button
+                              onClick={handleAddRule}
+                              variant="secondary"
+                              className="w-32 mt-3.5 mb-2"
+                            >
+                              <span className="mr-1">+</span> Create Slot
+                            </Button>
+                          </div>
 
+                          <div className="flex flex-wrap gap-2 p-2 box box--stacked">
+                            <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
+                              <span className="font-medium text-xs px-2 py-1">
+                                10 am - 11 am
+                              </span>
+                              <div className="self-stretch border-l border-gray-400"></div>
+                              <button
+                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                aria-label="Remove time slot"
+                              >
+                                ×
+                              </button>
+                            </div>
 
+                            <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
+                            <span className="font-medium text-xs px-2 py-1">
+                            10 am - 11 am
+                              </span>
+                              <div className="self-stretch border-l border-gray-400"></div>
+                              <button
+                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                aria-label="Remove time slot"
+                              >
+                                ×
+                              </button>
+                            </div>
 
+                            <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
+                            <span className="font-medium text-xs px-2 py-1">
+                            10 am - 11 am
+                              </span>
+                              <div className="self-stretch border-l border-gray-400"></div>
+                              <button
+                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                aria-label="Remove time slot"
+                              >
+                                ×
+                              </button>
+                            </div>
 
+                            <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
+                            <span className="font-medium text-xs px-2 py-1">
+                            10 am - 11 am
+                              </span>
+                              <div className="self-stretch border-l border-gray-400"></div>
+                              <button
+                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                aria-label="Remove time slot"
+                              >
+                                ×
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-<div>
-<div  className="mb-4 flex items-center space-x-3">
-          <div className="inline-flex text-xs items-center p-0 m-0 text-gray-700  flex-shrink-0">
-            <span className="font-medium px-4 py-2">{"Set your working hours"}</span>
-       
-           </div>
-          
-           <div className="flex  flex-col items-center md:flex-row">
-                    <FormInput
-                      type="text"
-                      className="first:rounded-b-none  text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
-                      placeholder={"From"}
-                    />
-                    <FormSelect className="md:w-36 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
-                      <option value="office">10 am</option>
-                      <option value="home">11 am</option>
-                    </FormSelect>
-                  </div>
-
-                  <div className="flex  flex-col items-center md:flex-row">
-                    <FormInput
-                      type="text"
-                      className="first:rounded-b-none  text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
-                      placeholder={"To"}
-                    />
-                    <FormSelect className="md:w-36 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
-                      <option value="office">1 pm</option>
-                      <option value="home">2 p</option>
-                    </FormSelect>
-                  </div>
-  
-        </div>
-
-<div className="mb-4 flex items-center space-x-3">
-  <div className="inline-flex text-xs items-center p-0 m-0 text-gray-700  flex-shrink-0">
-<span>{"Duration"}</span>
-</div>
-    <div className="w-48">
-                  <FormSelect>
-                    <option value="daily">24 Hours</option>
-                    <option value="weekly">48 Hours</option>
-                    <option value="monthly">64 Hours</option>
-                  </FormSelect>
-                </div>
-
-                <Button
-                        onClick={handleAddRule}
-                        className="w-32 mt-3.5 mb-2 border-dashed border-slate-300 hover:bg-slate-50 dark:hover:bg-darkmode-400"
-                      >
-                        <span className="mr-1">+</span> Add Slots
-                      </Button>
-</div>
-  
-<div className="flex flex-wrap gap-2 p-2 box box--stacked">
-      <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-        <span className="font-medium px-4 py-2">10 am - 11 am</span>
-        <div className="self-stretch border-l border-gray-400"></div>
-        <button 
-          className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
-          aria-label="Remove time slot"
-        >
-          ×
-        </button>
-      </div>
-      
-      <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-        <span className="font-medium px-4 py-2">10 am - 11 am</span>
-        <div className="self-stretch border-l border-gray-400"></div>
-        <button 
-          className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
-          aria-label="Remove time slot"
-        >
-          ×
-        </button>
-      </div>
-      
-      <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-        <span className="font-medium px-4 py-2">10 am - 11 am</span>
-        <div className="self-stretch border-l border-gray-400"></div>
-        <button 
-          className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
-          aria-label="Remove time slot"
-        >
-          ×
-        </button>
-      </div>
-      
-      <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-        <span className="font-medium px-4 py-2">10 am - 11 am</span>
-        <div className="self-stretch border-l border-gray-400"></div>
-        <button 
-          className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
-          aria-label="Remove time slot"
-        >
-          ×
-        </button>
-      </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-      
-    </div>
-        
-        <div className=" flex justify-center">
-          <button className="flex items-center justify-center px-14 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50">
-            <span className="mr-1">+</span> Add Availabilty
-          </button>
-        </div>
-                      
+                      <div className=" flex justify-center">
+                        <button className="flex items-center justify-center px-14 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50">
+                          <span className="mr-1">+</span> Add Availabilty
+                        </button>
+                      </div>
                     </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
                       <div className="text-left">
                         <div className="flex items-center">
-                          <div className="font-medium">Alot Packages to the Slots   </div>
+                          <div className="font-medium">
+                            Alot Packages to the Slots{" "}
+                          </div>
                           <div className="ml-2.5 px-2 py-0.5 bg-slate-100 text-slate-500 dark:bg-darkmode-300 dark:text-slate-400 text-xs rounded-md border border-slate-200">
                             Required
                           </div>
                         </div>
                         <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
-                        Select your gender from the options.                                              </div>
+                          Select your gender from the options.{" "}
+                        </div>
                       </div>
                     </label>
                     <div className="flex-1 w-full mt-3  p-2 xl:mt-0 box box--stacked">
-                     
+                      <div className="max-w-4xl mx-auto p-4">
+                        {timeSlots.map((slot) => (
+                          <div
+                            key={slot.id}
+                            className="mb-4 flex items-center space-x-3"
+                          >
+                            <div className="inline-flex text-xs items-center bg-gray-200 text-gray-700 rounded-md flex-shrink-0">
+                              <span className="font-medium px-4 py-2">
+                                {slot.time}
+                              </span>
+                              <div className="self-stretch border-l border-gray-400"></div>
+                              <button
+                                className="px-3 py-2  text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                aria-label="Remove time slot"
+                              >
+                                ×
+                              </button>
+                            </div>
 
-                    <div className="max-w-4xl mx-auto p-4">
+                            <div className="flex  flex-col items-center md:flex-row">
+                              <FormInput
+                                type="text"
+                                className="first:rounded-b-none w-14 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
+                                placeholder={"From"}
+                              />
+                              <FormSelect className="md:w-20 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                                <option value="office">10 am</option>
+                                <option value="home">11 am</option>
+                              </FormSelect>
+                            </div>
 
+                            <div className="flex-grow">
+                              <input
+                                type="text"
+                                value={slot.package}
+                                onChange={(e) =>
+                                  handlePackageChange(slot.id, e.target.value)
+                                }
+                                placeholder="Assign Package"
+                                className="w-full border border-gray-300 rounded-md px-3 py-1 text-sm"
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
 
-
-
-
-
-
-
-
-
-
-      {timeSlots.map((slot) => (
-        <div key={slot.id} className="mb-4 flex items-center space-x-3">
-          <div className="inline-flex text-xs items-center bg-gray-200 text-gray-700 rounded-md flex-shrink-0">
-            <span className="font-medium px-4 py-2">{slot.time}</span>
-            <div className="self-stretch border-l border-gray-400"></div>
-            <button 
-              className="px-3 py-2  text-gray-500 hover:text-gray-700 flex items-center justify-center"
-              aria-label="Remove time slot"
-            >
-              ×
-            </button>
-           </div>
-          
-           <div className="flex  flex-col items-center md:flex-row">
-                    <FormInput
-                      type="text"
-                      className="first:rounded-b-none  text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
-                      placeholder={"From"}
-                    />
-                    <FormSelect className="md:w-36 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
-                      <option value="office">10 am</option>
-                      <option value="home">11 am</option>
-                    </FormSelect>
-                  </div>
-          
-          <div className="flex-grow">
-            <input 
-              type="text" 
-              value={slot.package}
-              onChange={(e) => handlePackageChange(slot.id, e.target.value)}
-              placeholder="Assign Package" 
-              className="w-full border border-gray-300 rounded-md px-3 py-1 text-sm"
-            />
-          </div>
-        </div>
-      ))}
-
-
-
-
-
-
-
-
-
-
-      
-    </div>
-        
-        <div className=" flex justify-center">
-          <button className="flex items-center justify-center px-14 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50">
-            <span className="mr-1">+</span> Save
-          </button>
-        </div>
-                      
+                      <div className=" flex justify-center">
+                        <button className="flex items-center justify-center px-14 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-50">
+                          <span className="mr-1">+</span> Save
+                        </button>
+                      </div>
                     </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
@@ -507,7 +408,8 @@ function main() {
                           </div>
                         </div>
                         <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
-                        Please provide a valid phone number where we can reach you if needed.
+                          Please provide a valid phone number where we can reach
+                          you if needed.
                         </div>
                       </div>
                     </label>
@@ -531,10 +433,10 @@ function main() {
 
                       <div className="flex flex-col p-2 gap-2 box box--stacked">
                         {rules.map((rule, index) => (
-                       <div
-                       key={index}
-                       className=" flex flex-row justify-center bg-slate-100 border-slate-300 border rounded py-1 px-2 flex items-start"
-                     >
+                          <div
+                            key={index}
+                            className=" flex flex-row justify-center bg-slate-100 border-slate-300 border rounded py-1 px-2 flex items-start"
+                          >
                             <span className="text-gray-500 mr-2 mt-1">•</span>
                             <div className="flex-grow">
                               <input
@@ -557,22 +459,6 @@ function main() {
                       </div>
                     </div>
                   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
                     <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
@@ -584,7 +470,8 @@ function main() {
                           </div>
                         </div>
                         <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
-                        Please provide a valid phone number where we can reach you if needed.
+                          Please provide a valid phone number where we can reach
+                          you if needed.
                         </div>
                       </div>
                     </label>
@@ -608,10 +495,10 @@ function main() {
 
                       <div className="flex flex-col p-2 gap-2 box box--stacked">
                         {rules.map((rule, index) => (
-                       <div
-                       key={index}
-                       className=" flex flex-row justify-center bg-slate-100 border-slate-300 border rounded py-1 px-2 flex items-start"
-                     >
+                          <div
+                            key={index}
+                            className=" flex flex-row justify-center bg-slate-100 border-slate-300 border rounded py-1 px-2 flex items-start"
+                          >
                             <span className="text-gray-500 mr-2 mt-1">•</span>
                             <div className="flex-grow">
                               <input
@@ -634,18 +521,47 @@ function main() {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
+                  <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <div className="text-left">
+                      <div className="flex items-center">
+                        <div className="font-medium">Term & Condition</div>
+                      </div>
+                      <div className="mt-1.5 xl:mt-3 text-xs leading-relaxed text-slate-500/80 dark:text-slate-400">
+                        Check this box if you want to enable exclusive access to
+                        certain features or content on our platform. Check this
+                        box if you want to enable exclusive access to certain
+                        features or content on our platform.
+                      </div>
+                    </div>
+                  </label>
+                  <div className="flex-1 w-full mt-3 xl:mt-0">
+                    <FormCheck>
+                      <FormCheck.Input
+                        id="checkbox-switch-1"
+                        type="checkbox"
+                        value=""
+                      />
+                      <FormCheck.Label
+                        className="ml-3.5 text-slate-500 leading-relaxed"
+                        htmlFor="checkbox-switch-1"
+                      >
+                        Opting to maintain exclusivity for your portfolio of
+                        items on this platform can significantly boost your
+                        earnings.
+                      </FormCheck.Label>
+                    </FormCheck>
+                  </div>
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
+                <div className="flex pt-5 mt-6 border-t border-dashed md:justify-end border-slate-300/70">
+                  <Button
+                    variant="outline-primary"
+                    className="w-full px-4 border-primary/50 md:w-auto"
+                  >
+                    Save Changes
+                  </Button>
                 </div>
               </div>
             </div>
