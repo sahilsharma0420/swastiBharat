@@ -116,7 +116,7 @@ function main() {
                     )}
                   </Alert> */}
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
-                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-40 xl:mr-8">
                       <div className="text-left">
                         <div className="flex items-center">
                           <div className="font-medium">Class Type </div>
@@ -161,7 +161,7 @@ function main() {
                     </div>
                   </div>
                   <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
-                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-40  xl:mr-8">
                       <div className="text-left">
                         <div className="flex items-center">
                           <div className="font-medium">
@@ -193,7 +193,7 @@ function main() {
                   </div>
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
-                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <label className="inline-block mb-2  sm:mb-0 sm:mr-5 sm:text-right xl:w-40 xl:mr-8">
                       <div className="text-left">
                         <div className="flex items-center">
                           <div className="font-medium">Create Slots</div>
@@ -211,43 +211,45 @@ function main() {
                     <div className="flex-1 w-full mt-3  p-2 xl:mt-0 box box--stacked">
                       <div className="max-w-4xl mx-auto p-4">
                         <div>
-                          <div className="mb-4 flex items-center space-x-3">
+                          <div className="mb-4 flex flex-col sm:flex-row items-center space-x-3">
                             <div className="inline-flex text-xs items-center p-0 m-0 text-gray-700 flex-shrink-0">
                               <span className="font-medium py-2">
                                 {"Set your working hours"}
                               </span>
                             </div>
-
-                            <div className="flex  flex-col items-center md:flex-row">
+                              <div className="flex flex-row gap-2">
+                            <div className="flex   items-center flex-row">
                               <FormInput
                                 type="text"
-                                className="first:rounded-b-none w-16 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
+                                className="first:rounded-b-none w-14 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
                                 placeholder={"From"}
                               />
-                              <FormSelect className=" w-40 md:w-20   text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                              <FormSelect className=" w-18   text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
                                 <option value="office">10 am</option>
                                 <option value="home">11 am</option>
                               </FormSelect>
                             </div>
 
-                            <div className="flex  flex-col items-center md:flex-row">
+                            <div className="flex   items-center flex-row">
                               <FormInput
                                 type="text"
                                 className="first:rounded-b-none w-10 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
                                 placeholder={"To"}
                               />
-                              <FormSelect className="md:w-20 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                              <FormSelect className="w-18 text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
                                 <option value="office">1 pm</option>
                                 <option value="home">2 p</option>
                               </FormSelect>
                             </div>
                           </div>
-
-                          <div className="mb-4 flex items-center space-x-3">
-                            <div className="inline-flex text-xs items-center p-0 m-0 text-gray-700  flex-shrink-0">
+                          </div>
+                          <div className="mb-4 flex flex-col sm:flex-row  items-center space-x-3">
+                            <div className="inline-flex text-xs items-center p-0 mb-2 sm:mb-0 sm:m-0 text-gray-700  flex-shrink-0">
                               <span>{"Duration"}</span>
                             </div>
-                            <div className="w-48">
+                            <div className="flex flex-row gap-2">
+
+                            <div className=" w-32 sm:mt-3.5 sm:w-48">
                               <FormSelect>
                                 <option value="daily">Minutes</option>
                                 <option value="weekly">Hours</option>
@@ -257,20 +259,21 @@ function main() {
                             <Button
                               onClick={handleAddRule}
                               variant="secondary"
-                              className="w-32 mt-3.5 mb-2"
+                              className="w-32 sm:mt-3.5 mb-2"
                             >
                               <span className="mr-1">+</span> Create Slot
                             </Button>
+                            </div>
                           </div>
 
                           <div className="flex flex-wrap gap-2 p-2 box box--stacked">
                             <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-                              <span className="font-medium text-xs px-2 py-1">
+                              <span className="font-medium text-xs px-1 sm:px-2  py-1">
                                 10 am - 11 am
                               </span>
                               <div className="self-stretch border-l border-gray-400"></div>
                               <button
-                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                className="px-2 sm:px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
                                 aria-label="Remove time slot"
                               >
                                 ×
@@ -278,12 +281,12 @@ function main() {
                             </div>
 
                             <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-                            <span className="font-medium text-xs px-2 py-1">
+                            <span className="font-medium text-xs px-1 sm:px-2  py-1">
                             10 am - 11 am
                               </span>
                               <div className="self-stretch border-l border-gray-400"></div>
                               <button
-                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                className="px-2 sm:px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
                                 aria-label="Remove time slot"
                               >
                                 ×
@@ -291,12 +294,12 @@ function main() {
                             </div>
 
                             <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-                            <span className="font-medium text-xs px-2 py-1">
+                            <span className="font-medium text-xs px-1 sm:px-2  py-1">
                             10 am - 11 am
                               </span>
                               <div className="self-stretch border-l border-gray-400"></div>
                               <button
-                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                className="px-2 sm:px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
                                 aria-label="Remove time slot"
                               >
                                 ×
@@ -304,12 +307,12 @@ function main() {
                             </div>
 
                             <div className="inline-flex items-center bg-gray-200 text-gray-700 rounded-md">
-                            <span className="font-medium text-xs px-2 py-1">
+                            <span className="font-medium text-xs px-1 sm:px-2  py-1">
                             10 am - 11 am
                               </span>
                               <div className="self-stretch border-l border-gray-400"></div>
                               <button
-                                className="px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
+                                className="px-2 sm:px-3 py-2 text-gray-500 hover:text-gray-700 flex items-center justify-center"
                                 aria-label="Remove time slot"
                               >
                                 ×
@@ -328,7 +331,7 @@ function main() {
                   </div>
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
-                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-40 xl:mr-8">
                       <div className="text-left">
                         <div className="flex items-center">
                           <div className="font-medium">
@@ -348,10 +351,10 @@ function main() {
                         {timeSlots.map((slot) => (
                           <div
                             key={slot.id}
-                            className="mb-4 flex items-center space-x-3"
+                            className="mb-4 flex flex-col sm:flex-row items-center space-x-3"
                           >
-                            <div className="inline-flex text-xs items-center bg-gray-200 text-gray-700 rounded-md flex-shrink-0">
-                              <span className="font-medium px-4 py-2">
+                            <div className="inline-flex text-xs mb-2 sm:mb-0 items-center bg-gray-200 text-gray-700 rounded-md flex-shrink-0">
+                              <span className="font-medium px-2 py-2">
                                 {slot.time}
                               </span>
                               <div className="self-stretch border-l border-gray-400"></div>
@@ -362,14 +365,15 @@ function main() {
                                 ×
                               </button>
                             </div>
+                            <div className="flex flex-row gap-2">
 
-                            <div className="flex  flex-col items-center md:flex-row">
+                            <div className="flex   items-center flex-row">
                               <FormInput
                                 type="text"
                                 className="first:rounded-b-none w-14 text-xs first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10"
                                 placeholder={"From"}
                               />
-                              <FormSelect className="md:w-20 w-40  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
+                              <FormSelect className="w-20  text-xs first:rounded-b-none first:md:rounded-bl-md first:md:rounded-r-none [&:not(:first-child):not(:last-child)]:-mt-px [&:not(:first-child):not(:last-child)]:md:mt-0 [&:not(:first-child):not(:last-child)]:md:-ml-px [&:not(:first-child):not(:last-child)]:rounded-none last:rounded-t-none last:md:rounded-l-none last:md:rounded-tr-md last:-mt-px last:md:mt-0 last:md:-ml-px focus:z-10">
                                 <option value="office">10 am</option>
                                 <option value="home">11 am</option>
                               </FormSelect>
@@ -386,6 +390,7 @@ function main() {
                                 className="w-full border border-gray-300 rounded-md px-3 py-1 text-sm"
                               />
                             </div>
+                            </div>
                           </div>
                         ))}
                       </div>
@@ -399,7 +404,7 @@ function main() {
                   </div>
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
-                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-40 xl:mr-8">
                       <div className="text-left">
                         <div className="flex items-center">
                           <div className="font-medium">Rules</div>
@@ -461,7 +466,7 @@ function main() {
                   </div>
 
                   <div className="flex-col block pt-5 mt-5 xl:items-start sm:flex xl:flex-row first:mt-0 first:pt-0">
-                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                    <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-40 xl:mr-8">
                       <div className="text-left">
                         <div className="flex items-center">
                           <div className="font-medium">Requirement </div>
@@ -523,7 +528,7 @@ function main() {
                   </div>
                 </div>
                 <div className="flex-col block pt-5 mt-5 xl:items-center sm:flex xl:flex-row first:mt-0 first:pt-0">
-                  <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-60 xl:mr-14">
+                  <label className="inline-block mb-2 sm:mb-0 sm:mr-5 sm:text-right xl:w-40 xl:mr-8">
                     <div className="text-left">
                       <div className="flex items-center">
                         <div className="font-medium">Term & Condition</div>
