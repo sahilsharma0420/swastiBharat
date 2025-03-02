@@ -104,6 +104,14 @@ const fakers = {
           imageAssets["/src/assets/images/projects/project10-400x400.jpg"]
             .default,
       },
+      {
+        title: "Sales Presentation Deck",
+        link: generateRandomLink(),
+        contributors: users.fakeUsers(),
+        image:
+          imageAssets["/src/assets/images/projects/project10-400x400.jpg"]
+            .default,
+      },
     ];
 
     return _.shuffle(projectDetails);

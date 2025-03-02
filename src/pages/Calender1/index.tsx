@@ -69,11 +69,11 @@ function Main() {
                     options={dragableOptions}
                   >
                     <div className="p-5 mt-3.5 box box--stacked">
-                      <div className="flex flex-col items-start pb-5 mb-5 border-b border-dashed gap-y-2 sm:flex-row border-slate-300/70">
+                      <div className="flex  items-start pb-5 mb-5 border-b border-dashed gap-y-2 flex-row border-slate-300/70">
                         <div className="overflow-hidden rounded-full w-14 h-14 image-fit border-[3px] border-slate-200/70">
                           <img alt="" src={"/images/pages/Calender/user.png"} />
                         </div>
-                        <div className="text-center flex flex-col gap-1 sm:text-left sm:ml-4">
+                        <div className="text-start flex flex-col gap-1 text-left ml-4">
                           <div className="text-base font-medium">
                             {"Ankush Gupta"}
                           </div>
@@ -87,13 +87,13 @@ function Main() {
                             Monthly Package
                           </div>
                         </div>
-                        <div className="flex items-center px-3 py-1 font-medium border rounded-full sm:ml-auto border-success/10 bg-success/10 text-success">
+                        <div className="flex items-center px-3 py-1 font-medium border rounded-full ml-auto border-success/10 bg-success/10 text-success">
                           <div className="w-1.5 h-1.5 mr-2 rounded-full border border-success/50 bg-success/50"></div>{" "}
                           Online
                         </div>
                       </div>
-                      <div className="flex flex-col text-start gap-y-3 sm:flex-row">
-                        <div className="flex-1 border-dashed sm:border-r last:border-0">
+                      <div className="flex  text-start gap-y-3 flex-row">
+                        <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
                              mandi, West Delhi, 247776
@@ -103,11 +103,11 @@ function Main() {
                     </div>
 
                     <div className="p-5 mt-3.5 box box--stacked">
-                      <div className="flex flex-col items-start pb-5 mb-5 border-b border-dashed gap-y-2 sm:flex-row border-slate-300/70">
+                      <div className="flex items-start pb-5 mb-5 border-b border-dashed gap-y-2 flex-row border-slate-300/70">
                         <div className="overflow-hidden rounded-full w-14 h-14 image-fit border-[3px] border-slate-200/70">
                           <img alt="" src={"/images/pages/Calender/user.png"} />
                         </div>
-                        <div className="text-center flex flex-col gap-1 sm:text-left sm:ml-4">
+                        <div className="text-start flex flex-col gap-1 text-left ml-4">
                           <div className="text-base font-medium">
                             {"Ankush Gupta"}
                           </div>
@@ -121,13 +121,13 @@ function Main() {
                             Monthly Package
                           </div>
                         </div>
-                        <div className="flex items-center px-3 py-1 font-medium border rounded-full sm:ml-auto border-success/10 bg-success/10 text-success">
+                        <div className="flex items-center px-3 py-1 font-medium border rounded-full ml-auto border-success/10 bg-success/10 text-success">
                           <div className="w-1.5 h-1.5 mr-2 rounded-full border border-success/50 bg-success/50"></div>{" "}
                           Online
                         </div>
                       </div>
-                      <div className="flex flex-col text-start gap-y-3 sm:flex-row">
-                        <div className="flex-1 border-dashed sm:border-r last:border-0">
+                      <div className="flex  text-start gap-y-3 flex-row">
+                        <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
                              mandi, West Delhi, 247776
@@ -137,11 +137,11 @@ function Main() {
                     </div>
 
                     <div className="p-5 mt-3.5 box box--stacked">
-                      <div className="flex flex-col items-start pb-5 mb-5 border-b border-dashed gap-y-2 sm:flex-row border-slate-300/70">
+                      <div className="flex  items-start pb-5 mb-5 border-b border-dashed gap-y-2 flex-row border-slate-300/70">
                         <div className="overflow-hidden rounded-full w-14 h-14 image-fit border-[3px] border-slate-200/70">
                           <img alt="" src={"/images/pages/Calender/user.png"} />
                         </div>
-                        <div className="text-center flex flex-col gap-1 sm:text-left sm:ml-4">
+                        <div className="text-start flex flex-col gap-1 text-left ml-4">
                           <div className="text-base font-medium">
                             {"Ankush Gupta"}
                           </div>
@@ -155,13 +155,13 @@ function Main() {
                             Monthly Package
                           </div>
                         </div>
-                        <div className="flex items-center px-3 py-1 font-medium border rounded-full sm:ml-auto border-success/10 bg-success/10 text-success">
+                        <div className="flex items-center px-3 py-1 font-medium border rounded-full ml-auto border-success/10 bg-success/10 text-success">
                           <div className="w-1.5 h-1.5 mr-2 rounded-full border border-success/50 bg-success/50"></div>{" "}
                           Online
                         </div>
                       </div>
-                      <div className="flex flex-col text-start gap-y-3 sm:flex-row">
-                        <div className="flex-1 border-dashed sm:border-r last:border-0">
+                      <div className="flex  text-start gap-y-3 flex-row">
+                        <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
                              mandi, West Delhi, 247776

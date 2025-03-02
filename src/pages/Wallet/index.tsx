@@ -67,7 +67,7 @@ function main() {
               </div>
             </div>
             <div className="py-5 mt-5 border border-dashed rounded-md border-slate-300/70">
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col items-center md:flex-row">
                 <div className="flex items-center justify-center flex-1 py-3 border-dashed md:border-r border-slate-300/70 last:border-0">
                   <div
                     className={clsx([
