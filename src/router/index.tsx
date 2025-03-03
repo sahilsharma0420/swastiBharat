@@ -62,6 +62,7 @@ import ImageZoom from "../pages/ImageZoom";
 import LandingPage from "../pages/LandingPage";
 import Classes from "../pages/Classes";
 import Wallet from "../pages/Wallet";
+import Profile from "../pages/Profile";
 import Calender from "../pages/Calender1";
 import Layout from "../themes";
 
@@ -86,6 +87,10 @@ function Router() {
         {
           path: "/wallet",
           element: <Wallet />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
         },
         {
           path: "/",
