@@ -65,6 +65,8 @@ import Wallet from "../pages/Wallet";
 import Profile from "../pages/Profile";
 import Calender from "../pages/Calender1";
 import Layout from "../themes";
+import Profile1 from "../pages/Profile1";
+import ReferAndEarn from "../pages/ReferAndEarn";
 
 function Router() {
   const routes = [
@@ -91,6 +93,13 @@ function Router() {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/refer-and-earn",
+          element: <ReferAndEarn />,
+        }, {
+          path: "/profile1",
+          element: <Profile1/>,
         },
         {
           path: "/",

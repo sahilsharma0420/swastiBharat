@@ -54,6 +54,15 @@ const initialState: SideMenuState = {
       title: "Profile ",
     },
     {
+      icon: "ActivitySquare",
+      pathname: "/refer-and-earn",
+      title: "Refer and Earn ",
+    },   {
+      icon: "ActivitySquare",
+      pathname: "/profile1",
+      title: "Profile1 ",
+    },
+    {
       icon: "Album",
       pathname: "/dashboard-overview-3",
       title: "Hospital",
