@@ -101,49 +101,49 @@ function Main() {
                 <div className="pb-5 mb-6 font-medium border-b border-dashed border-slate-300/70 text-[0.94rem]">
                   Profile Info
                 </div>
-                <div class="grid m-3 grid-cols-1 md:grid-cols-2 gap-5">
-                  <div class="p-5 box box--stacked h-full">
-                    <div class="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-                      <div class="text-base text-slate-500">Bio</div>
+                <div className="grid m-3 grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="p-5 box box--stacked h-full">
+                    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                      <div className="text-base text-slate-500">Bio</div>
                     </div>
-                    <div class="flex items-center mb-8">
+                    <div className="flex items-center mb-8">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Soluta qui molestiae sit sunt.
                     </div>
                   </div>
 
-                  <div class="p-5 box box--stacked h-full">
-                    <div class="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-                      <div class="text-base text-slate-500">Languages</div>
+                  <div className="p-5 box box--stacked h-full">
+                    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                      <div className="text-base text-slate-500">Languages</div>
                     </div>
-                    <div class="flex items-center mb-8">
-                      <ul class="list-disc pl-5 space-y-2">
-                        <li class="text-gray-800">Hindi</li>
-                        <li class="text-gray-800">English</li>
-                        <li class="text-gray-800">Punjabi</li>
+                    <div className="flex items-center mb-8">
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li className="text-gray-800">Hindi</li>
+                        <li className="text-gray-800">English</li>
+                        <li className="text-gray-800">Punjabi</li>
                       </ul>
                     </div>
                   </div>
 
-                  <div class="p-5 box box--stacked h-full">
-                    <div class="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-                      <div class="text-base text-slate-500">Experiences</div>
+                  <div className="p-5 box box--stacked h-full">
+                    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                      <div className="text-base text-slate-500">Experiences</div>
                     </div>
-                    <div class="flex items-center mb-8">
+                    <div className="flex items-center mb-8">
                       5+ years of experience
                     </div>
                   </div>
 
-                  <div class="p-5 box box--stacked h-full">
-                    <div class="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-                      <div class="text-base text-slate-500">Certificates</div>
+                  <div className="p-5 box box--stacked h-full">
+                    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                      <div className="text-base text-slate-500">Certificates</div>
                     </div>
-                    <div class="flex items-center mb-8">
-                      <ul class="list-disc pl-5 space-y-2">
-                        <li class="text-gray-800">Kids yoga certificate</li>
-                        <li class="text-gray-800">Parental yoga certificate</li>
-                        <li class="text-gray-800">Yoga therapy certificate</li>
-                        <li class="text-gray-800">
+                    <div className="flex items-center mb-8">
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li className="text-gray-800">Kids yoga certificate</li>
+                        <li className="text-gray-800">Parental yoga certificate</li>
+                        <li className="text-gray-800">Yoga therapy certificate</li>
+                        <li className="text-gray-800">
                           Experienced Registered Yoga Teacher
                         </li>
                       </ul>

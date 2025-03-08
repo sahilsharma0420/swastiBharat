@@ -1,3 +1,4 @@
+
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 import { icons } from "@/components/Base/Lucide";
@@ -61,6 +62,11 @@ const initialState: SideMenuState = {
       icon: "ActivitySquare",
       pathname: "/profile1",
       title: "Profile1 ",
+    },
+    {
+      icon: "ActivitySquare",
+      pathname: "/calender2",
+      title: "Calender2 ",
     },
     {
       icon: "Album",

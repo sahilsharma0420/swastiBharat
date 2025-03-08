@@ -263,7 +263,7 @@ function Main() {
                         </div>
                       </div>
                       <div>
-                        <div className="font-medium truncate max-w-[15rem]">
+                        <div className="font-medium truncate max-w-[12rem]">
                           {faker.activity}
                         </div>
                         <div className="mt-1 text-xs text-slate-500">
@@ -273,7 +273,7 @@ function Main() {
                       <div className=" ml-auto">
                         <Button
                           variant="primary"
-                          className="bg-gradient-to-b from-[#02161F] to-[#075985] text-white px-4 py-2 rounded-xl shadow-lg"
+                          className="bg-gradient-to-b whitespace-nowrap from-[#02161F] to-[#075985] text-white px-4 py-2 rounded-xl shadow-lg"
                         >
                           Claim Now{" "}
                         </Button>
