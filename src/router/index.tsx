@@ -68,6 +68,8 @@ import Layout from "../themes";
 import Profile1 from "../pages/Profile1";
 import ReferAndEarn from "../pages/ReferAndEarn";
 import Calender2 from "../pages/Calender2";
+import Specialisation  from "../pages/Specialisation"
+import Category from "../pages/Category"
 
 function Router() {
   const routes = [
@@ -105,6 +107,14 @@ function Router() {
         {
           path: "/calender2",
           element: <Calender2/>,
+        },
+        {
+          path: "/specialisation",
+          element: <Specialisation/>,
+        },
+        {
+          path: "/category",
+          element: <Category/>,
         },
         {
           path: "/",

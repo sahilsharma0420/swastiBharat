@@ -1,6 +1,6 @@
 import Lucide from "@/components/Base/Lucide";
 import { FormInput, FormCheck, FormTextarea } from "@/components/Base/Form";
-
+import  "./style.css"
 import review from "@/fakers/review";
 import { Link, useLocation } from "react-router-dom";
 
@@ -17,13 +17,13 @@ import _ from "lodash";
 function Main() {
 
   const chakraColors = [
-    '#EE1F541A', // Root - Red
-    '#F1481E1A', // Sacral - Orange
-    '#F38F201A', // Solar Plexus - Yellow
-    '#5EB9381A', // Heart - Green
-    '#519FDD1A', // Throat - Blue
-    '#4754AE1A', // Third Eye - Indigo
-    '#663DA11A'  // Crown - Violet
+    "#EE1F541A", // Root - Red
+    "#F1481E1A", // Sacral - Orange
+    "#F38F201A", // Solar Plexus - Yellow
+    "#5EB9381A", // Heart - Green
+    "#519FDD1A", // Throat - Blue
+    "#4754AE1A", // Third Eye - Indigo
+    "#663DA11A", // Crown - Violet
   ];
   const stripeWidths = [
     "14%", // Red stripe width
@@ -32,7 +32,7 @@ function Main() {
     "14%", // Green stripe width
     "14%", // Blue stripe width
     "14%", // Indigo stripe width
-    "14%"  // Violet stripe width
+    "14%", // Violet stripe width
   ];
   const usersList = [
     { name: "Muladara", photo: users.fakeUsers()[0].photo },
@@ -52,89 +52,52 @@ function Main() {
       <div className="col-span-12">
         <div className="mt-3.5 grid grid-cols-12 gap-y-10 gap-x-6">
           <div className="flex flex-col col-span-12 xl:col-span-8 gap-y-7">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-          <div style={{
-  background: 'linear-gradient(84.97deg, #FFFFFF 47.29%, #72005A 99.72%)'
-}} className="w-full rounded-2xl max-w-4xl mx-auto">
+          <div
+ style={{
+  background:
+    'linear-gradient(84.97deg, #FFFFFF 47.29%, #72005A 99.72%)',
+}}  className="w-full rounded-2xl "
+>
   <div className="relative flex rounded-2xl h-64 p-3 overflow-hidden">
-    {/* Vertical Gradient Stripes with Chakra Icons */}
-    <div className="absolute inset-0 pl-16 flex gap-2">
+    <div className="absolute inset-0 pl-8 flex gap-1">
       {chakraColors.map((color, index) => (
-        <div 
-          key={`stripe-${index}`} 
-          className="relative opacity-70 h-full flex items-end justify-center"
-          style={{ 
-            backgroundColor: color,
-            width: stripeWidths[index],
-            transform: 'skew(23deg)',
-            transformOrigin: 'bottom left',
-            marginLeft: '-55px' // Negative margin for overlap
-          }}
+        <div
+          key={`stripe-${index}`}
+          className="relative opacity-70 h-full flex items-end justify-center stripe"
+          style={{ backgroundColor: color, width: stripeWidths[index] || '20px' }}
         >
           <img
-            src={`./src/assets/images/users/user1-50x50.jpg`} // Replace with actual image paths
+            src="./src/assets/images/users/user1-50x50.jpg"
             alt={`Chakra ${index + 1}`}
-            className="absolute top-20  rounded-full"
-            style={{ 
-              width: '35px',
-              height: '35px',
-              marginLeft: '70px',
-              boxShadow: '0 0 10px rgba(0,0,0,0.3)',
-              transform: 'skew(-23deg)' // Counter the stripe skew
+            className="absolute top-12 sm:top-14 md:top-12 lg:top-14 rounded-full stripe-image"
+            style={{
+              width: '20px',
+              height: '20px',
+              boxShadow: '0 0 8px rgba(0,0,0,0.3)',
             }}
           />
         </div>
       ))}
     </div>
 
-    {/* Top Left Label */}
-    <div className="absolute top-4 left-8 text-gray-700 font-medium">
-      Chakras Earned
+    <div className="absolute top-1 left-2 text-gray-700 text-xs sm:text-sm md:text-base font-medium">
+      {"Chakras Earned"}
     </div>
-    <div className="absolute top-12 w-full h-px mx-1 mb-3 border-2 border-t border-dashed border-white-300/70"></div>
+    <div className="absolute top-8 w-full h-px mx-1 mb-3 border-2 border-t border-dashed border-white-300/70"></div>
 
-    {/* Bottom Right Text */}
-    <div className="absolute top-20 right-4 text-white text-2xl font-bold">
-      02 <span className="text-sm">Sets Completed</span>
+    
+    <div className="absolute top-12 right-1 text-white text-xs sm:text-sm md:text-lg lg:text-2xl font-bold">
+      02 <span className="text-xs sm:text-sm">Sets Completed</span>
     </div>
 
-    {/* Share Button */}
+    
     <div className="absolute bottom-4 right-4">
-      <Button variant="primary" className=" text-white px-4 py-2 border-none rounded-lg hover:bg-blue-700 transition-colors">
+      <button className="text-white px-2 py-1 sm:px-2 sm:py-1 md:px-4 md:py-2 border-none rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors">
         Share the Link
-      </Button>
+      </button>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <div className="flex w-full">
               <Button
