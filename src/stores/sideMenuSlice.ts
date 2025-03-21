@@ -79,6 +79,11 @@ const initialState: SideMenuState = {
       title: "category ",
     },
     {
+      icon: "ActivitySquare",
+      pathname: "/cardPage",
+      title: "CardPage",
+    },
+    {
       icon: "Album",
       pathname: "/dashboard-overview-3",
       title: "Hospital",

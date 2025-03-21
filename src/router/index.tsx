@@ -70,7 +70,7 @@ import ReferAndEarn from "../pages/ReferAndEarn";
 import Calender2 from "../pages/Calender2";
 import Specialisation  from "../pages/Specialisation"
 import Category from "../pages/Category"
-
+import Cardpage from "../pages/CardPage"
 function Router() {
   const routes = [
     {
@@ -115,6 +115,10 @@ function Router() {
         {
           path: "/category",
           element: <Category/>,
+        },
+        {
+          path: "/cardPage",
+          element: <Cardpage/>,
         },
         {
           path: "/",
