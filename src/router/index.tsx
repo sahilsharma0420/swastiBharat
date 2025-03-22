@@ -71,6 +71,8 @@ import Calender2 from "../pages/Calender2";
 import Specialisation  from "../pages/Specialisation"
 import Category from "../pages/Category"
 import Cardpage from "../pages/CardPage"
+import Schedule from "../pages/Schedule"
+import HelpCenter from "../pages/HelpCenter"
 function Router() {
   const routes = [
     {
@@ -119,6 +121,14 @@ function Router() {
         {
           path: "/cardPage",
           element: <Cardpage/>,
+        },
+        {
+          path: "/schedule",
+          element: <Schedule />,
+        },
+        {
+          path: "/helpCenter",
+          element: <HelpCenter />,
         },
         {
           path: "/",
@@ -354,6 +364,7 @@ function Router() {
       path: "/landing-page",
       element: <LandingPage />,
     },
+ 
     {
       path: "login",
       element: <Login />,

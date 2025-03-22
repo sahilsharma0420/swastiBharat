@@ -9,148 +9,40 @@ import Button from "@/components/Base/Button";
 function Main() {
   return (
     <>
-      <div className="grid w-full gap-5  lg:grid-cols-4">
-        <div className="p-4 w-full box box--stacked">
-          <div className="flex flex-col items-start">
-            <div className="w-full">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-xl border-[3px] border-slate-200/70">
-                <img
-                  className="w-full h-full object-cover"
-                  alt="Tailwise - Admin Dashboard Template"
-                  src={users.fakeUsers()[0].photo}
-                />
-              </div>
-            </div>
-            <div className="mt-3.5 text-xl font-bold">
-              {users.fakeUsers()[0].name}
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="mt-1 flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <Lucide
-                    key={index}
-                    icon="Star"
-                    className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                  />
-                ))}
-              </div>
-            </div>
-            <div
-              className="mt-2 text-base text-justify
- font-medium"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              totam harum corrupti, odio, quis, perferendis officiis quos itaque
-              dolorem molestiae quod iusto{" "}
+      <div className="w-full mt-8">
+  <div className="flex overflow-x-auto pb-6 gap-5 hide-scrollbar">
+    {users.fakeUsers().map((user, index) => (
+      <div key={index} className="p-4 min-w-[200px] md:min-w-[250px] lg:min-w-[300px] box box--stacked">
+        <div className="flex flex-col items-start">
+          <div className="w-full">
+            <div className="w-full aspect-[4/3] overflow-hidden rounded-xl border-[3px] border-slate-200/70">
+              <img
+                className="w-full h-full object-cover"
+                alt="User Profile"
+                src={user.photo}
+              />
             </div>
           </div>
-        </div>
-        <div className="p-4 w-full box box--stacked">
-          <div className="flex flex-col items-start">
-            <div className="w-full">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-xl border-[3px] border-slate-200/70">
-                <img
-                  className="w-full h-full object-cover"
-                  alt="Tailwise - Admin Dashboard Template"
-                  src={users.fakeUsers()[0].photo}
+          <div className="mt-3.5 text-xl font-bold">{user.name}</div>
+          <div className="flex justify-center items-center">
+            <div className="mt-1 flex items-center">
+              {[...Array(5)].map((_, i) => (
+                <Lucide
+                  key={i}
+                  icon="Star"
+                  className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
                 />
-              </div>
-            </div>
-            <div className="mt-3.5 text-xl font-bold">
-              {users.fakeUsers()[0].name}
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="mt-1 flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <Lucide
-                    key={index}
-                    icon="Star"
-                    className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                  />
-                ))}
-              </div>
-            </div>
-            <div
-              className="mt-2 text-base text-justify
- font-medium"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              totam harum corrupti, odio, quis, perferendis officiis quos itaque
-              dolorem molestiae quod iusto{" "}
+              ))}
             </div>
           </div>
-        </div>
-        <div className="p-4 w-full box box--stacked">
-          <div className="flex flex-col items-start">
-            <div className="w-full">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-xl border-[3px] border-slate-200/70">
-                <img
-                  className="w-full h-full object-cover"
-                  alt="Tailwise - Admin Dashboard Template"
-                  src={users.fakeUsers()[0].photo}
-                />
-              </div>
-            </div>
-            <div className="mt-3.5 text-xl font-bold">
-              {users.fakeUsers()[0].name}
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="mt-1 flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <Lucide
-                    key={index}
-                    icon="Star"
-                    className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                  />
-                ))}
-              </div>
-            </div>
-            <div
-              className="mt-2 text-base text-justify
- font-medium"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              totam harum corrupti, odio, quis, perferendis officiis quos itaque
-              dolorem molestiae quod iusto{" "}
-            </div>
-          </div>
-        </div>
-        <div className="p-4 w-full box box--stacked">
-          <div className="flex flex-col items-start">
-            <div className="w-full">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-xl border-[3px] border-slate-200/70">
-                <img
-                  className="w-full h-full object-cover"
-                  alt="Tailwise - Admin Dashboard Template"
-                  src={users.fakeUsers()[0].photo}
-                />
-              </div>
-            </div>
-            <div className="mt-3.5 text-xl font-bold">
-              {users.fakeUsers()[0].name}
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="mt-1 flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <Lucide
-                    key={index}
-                    icon="Star"
-                    className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                  />
-                ))}
-              </div>
-            </div>
-            <div
-              className="mt-2 text-base text-justify
- font-medium"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              totam harum corrupti, odio, quis, perferendis officiis quos itaque
-              dolorem molestiae quod iusto{" "}
-            </div>
+          <div className="mt-2 text-base text-justify font-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis totam harum corrupti, odio, quis, perferendis officiis quos itaque dolorem molestiae quod iusto.
           </div>
         </div>
       </div>
+    ))}
+  </div>
+</div>
 
       <div className="w-full mt-8 ">
   {/* Scrollable container */}
