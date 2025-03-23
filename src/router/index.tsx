@@ -122,14 +122,7 @@ function Router() {
           path: "/cardPage",
           element: <Cardpage/>,
         },
-        {
-          path: "/schedule",
-          element: <Schedule />,
-        },
-        {
-          path: "/helpCenter",
-          element: <HelpCenter />,
-        },
+      
         {
           path: "/",
           element: <DashboardOverview1 />,
@@ -364,7 +357,14 @@ function Router() {
       path: "/landing-page",
       element: <LandingPage />,
     },
- 
+    {
+      path: "/schedule",
+      element: <Schedule />,
+    },
+    {
+      path: "/helpCenter",
+      element: <HelpCenter />,
+    },
     {
       path: "login",
       element: <Login />,

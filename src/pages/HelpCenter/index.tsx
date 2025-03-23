@@ -3,7 +3,7 @@ import { Menu } from "@/components/Base/Headless";
 import users from "@/fakers/users";
 import projects from "@/fakers/projects";
 import projectDetails from "@/fakers/project-details";
-import { FormSelect, FormInput, FormCheck } from "@/components/Base/Form";
+import { FormSelect, FormInput, FormCheck, FormTextarea } from "@/components/Base/Form";
 import Tippy from "@/components/Base/Tippy";
 import Button from "@/components/Base/Button";
 import { Tab } from "@/components/Base/Headless";
@@ -91,51 +91,59 @@ import { useState } from "react";
           return (
             <div className="flex flex-col min-h-screen">
               {/* Hero Section */}
-              <header style={{backgroundColor:"#4A0F38"}} className="relative rounded-2xl text-white overflow-hidden">
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center relative">
-          {/* Left Section */}
-          <div className="w-full md:w-1/2 p-8 md:p-8 z-10">
-            <h1 className="text-4xl font-bold mb-2">How Can We Help You?</h1>
-            <p className="mb-6 text-xs">Navigate Through Our Help Center for Solutions, Tips, and Direct Support Channels</p>
-            
-            <div className="relative mt-3">
-                <FormInput
-                  type="text"
-                  placeholder="Search Your Keyword"
-                  className="sm:py-3"
-                />
-                <Button
-                  variant="primary"
-                  size="sm"
-                  className="w-full sm:w-auto sm:absolute inset-y-0 right-0 pl-3.5 pr-4 my-auto mt-2 sm:mt-auto mr-2 h-9 sm:h-8   "
-                >
-                  <Lucide
-                    icon="Search"
-                    className="w-3.5 h-3.5 mr-1.5 stroke-[1.3]"
-                  />
-                  Search
-                </Button>
-              </div>
+              <header className="relative rounded-2xl m-3 mx-4 text-white overflow-hidden">
+  <div className="container mx-auto">
+    <div className="flex flex-col md:flex-row items-center relative">
+      {/* Left Section */}
+      <div className="w-full md:w-1/2 p-8 md:p-8 z-10">
+        <h1 className="text-4xl font-bold mb-2">How Can We Help You?</h1>
+        <p className="mb-6 text-xs">Navigate Through Our Help Center for Solutions, Tips, and Direct Support Channels</p>
+        
+        <div className="relative mt-3">
+            <FormInput
+              type="text"
+              placeholder="Search Your Keyword"
+              className="sm:py-3"
+            />
+            <Button
+              variant="primary"
+              size="sm"
+              className="w-full sm:w-auto sm:absolute inset-y-0 right-0 pl-3.5 pr-4 my-auto mt-2 sm:mt-auto mr-2 h-9 sm:h-8"
+            >
+              <Lucide
+                icon="Search"
+                className="w-3.5 h-3.5 mr-1.5 stroke-[1.3]"
+              />
+              Search
+            </Button>
           </div>
-          
-          {/* Right Section */}
-          <div className="w-full md:w-1/2 p-8 md:p-12 flex items-center justify-center min-h-full z-10">
-            <div className="flex justify-center items-center h-64">
-              <img src="src/assets/images/myImages/contact_banner.png" alt="Help Center Illustration" className="w-64" />
-            </div>
-          </div>
-          
-          {/* Diagonal Divider */}
-          <div className="hidden md:block absolute top-0 bottom-0 left-0 right-0 z-0 overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full">
-              <div style={{backgroundColor:"#913674"}} className="absolute top-0 right-0 w-1/2 h-full transform origin-bottom-left skew-x-[-12deg]"></div>
-              <div style={{backgroundColor:"#4A0F38"}} className="absolute top-0 left-0 w-1/2 h-full "></div>
-            </div>
+      </div>
+      
+      {/* Right Section */}
+      <div className="w-full md:w-1/2 p-8 md:p-12 flex items-center justify-center min-h-full z-10">
+        <div className="flex justify-center items-center h-64">
+          <img src="src/assets/images/myImages/contact_banner.png" alt="Help Center Illustration" className="w-64" />
+        </div>
+      </div>
+      
+      {/* Background with Diagonal Divider */}
+      <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full z-0">
+        {/* Left side with gradient */}
+        <div className="absolute top-0 left-0 w-3/5 h-full bg-gradient-to-r from-[#4A0F38] to-[#913674]"></div>
+        
+        {/* Right side with solid color */}
+        <div className="absolute top-0 right-0 w-2/5 h-full"  style={{backgroundColor:'#913674'}}></div>
+        
+        {/* Diagonal divider */}
+        <div className="hidden md:block absolute top-0 bottom-0 left-0 right-0 z-1 overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div style={{backgroundColor:"#8D4275"}} className="absolute top-0 right-0 w-1/2 h-full transform origin-bottom-left skew-x-[-12deg]"></div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
         
               {/* Categories Grid */}
               <section className="py-10 px-4">
@@ -162,7 +170,7 @@ import { useState } from "react";
               <section className="py-10 px-4 bg-gray-50">
                 <div className="container mx-auto">
                   <div className="flex flex-col md:flex-row bg-white p-4 rounded-lg shadow-md overflow-hidden">
-                    <div style={{backgroundColor:"#913674"}} className="w-full md:w-1/3 rounded-2xl text-white p-8">
+                    <div  className="w-full bg-gradient-to-t from-[#3D0029] to-[#A3006F] md:w-1/3 rounded-2xl text-white p-8">
                       <h2 className="text-2xl font-bold mb-4">Connect Now</h2>
                       <p className="mb-6">We'd love to hear from you! Whether you have questions, need support, or want to collaborate, feel free to reach out to us.</p>
                       
@@ -176,30 +184,45 @@ import { useState } from "react";
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                           <div>
                             <label className="block text-sm text-gray-600 mb-2">Your Name</label>
-                            <input type="text" placeholder="Enter Your Name" className="w-full p-2 border rounded" />
+                            <div className="flex-1 w-full mt-3 xl:mt-0">
+                      <FormInput
+                        type="text"
+                        placeholder={users.fakeUsers()[0].name}
+                      />
+                    </div>
                           </div>
+                          
                           <div>
                             <label className="block text-sm text-gray-600 mb-2">Email</label>
-                            <input type="email" placeholder="example@mail.com" className="w-full p-2 border rounded" />
-                          </div>
+                            <div className="flex-1 w-full mt-3 xl:mt-0">
+                      <FormInput
+                        type="text"
+                        placeholder={users.fakeUsers()[0].email}
+                      />
+                    </div>                          </div>
                           <div>
                             <label className="block text-sm text-gray-600 mb-2">Mobile Number</label>
                             <div className="flex">
                               <div className="bg-gray-100 border border-r-0 rounded-l p-2 flex items-center">
                                 <span className="text-green-600 font-bold">+91</span>
                               </div>
-                              <input type="tel" placeholder="98765 43210" className="w-full p-2 border rounded-r" />
-                            </div>
+                              <div className="flex-1 w-full mt-3 xl:mt-0">
+                      <FormInput
+                        type="text"
+                        placeholder={users.fakeUsers()[0].phone}
+                      />
+                    </div>                            </div>
                           </div>
                         </div>
                         
                         <div>
                           <label className="block text-sm text-gray-600 mb-2">Message</label>
-                          <textarea 
-                            rows="5" 
-                            placeholder="Write Your Message Here" 
-                            className="w-full p-2 border rounded">
-                          </textarea>
+                          <div className="flex-1 w-full mt-3 xl:mt-0">
+                          <FormTextarea
+                  className="-mb-1.5 pr-16 pb-24 rounded-xl resize-none"
+                  placeholder="Type a message..."
+                />
+                    </div>
                         </div>
                       </form>
                     </div>
@@ -207,7 +230,7 @@ import { useState } from "react";
                 </div>
               </section>
         
-              <footer style={{backgroundColor:"#913674"}} className=" rounded-2xl text-white pt-10 relative">
+              <footer  className="bg-gradient-to-t from-[#3D0029] to-[#A3006F]  text-white pt-10 relative">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8">
           <div>
