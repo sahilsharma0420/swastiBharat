@@ -32,17 +32,8 @@ function Main() {
           Classes
         </div>
 
-
-
-
-
-
-        
         <div className="mt-3.5 flex flex-col lg:flex-row gap-y-10 gap-x-6">
-
-
-
-        <div className="flex flex-col w-full gap-y-7">
+          <div className="flex flex-col w-full gap-y-7">
             <div>
               <div className="p-5 mt-3.5 box box--stacked">
                 <div className="flex items-center h-10">
@@ -75,30 +66,32 @@ function Main() {
                       <div className="flex flex-col flex-start">
                         <div className="text-slate-500">Name</div>
                         <div className="flex items-center mt-1.5">
-                          <div className="text-base font-medium">Sahil Sharma</div>
+                          <div className="text-base font-medium">
+                            Sahil Sharma
+                          </div>
                         </div>
                         <div className="flex items-center">
-                      <Lucide
-                        icon="Star"
-                        className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                      />
-                      <Lucide
-                        icon="Star"
-                        className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                      />
-                      <Lucide
-                        icon="Star"
-                        className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                      />
-                      <Lucide
-                        icon="Star"
-                        className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                      />
-                      <Lucide
-                        icon="Star"
-                        className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
-                      />
-                    </div>
+                          <Lucide
+                            icon="Star"
+                            className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
+                          />
+                          <Lucide
+                            icon="Star"
+                            className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
+                          />
+                          <Lucide
+                            icon="Star"
+                            className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
+                          />
+                          <Lucide
+                            icon="Star"
+                            className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
+                          />
+                          <Lucide
+                            icon="Star"
+                            className="w-3.5 h-3.5 mr-1 text-pending fill-pending/30"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center justify-center flex-1 py-3 px-2 border-dashed md:border-l md:border-r border-slate-300/70 last:border-0">
@@ -118,23 +111,31 @@ function Main() {
                     <div className="flex items-center justify-center flex-1 py-3 border-dashed md:border-r border-slate-300/70 last:border-0">
                       <div className="flex flex-col flex-start">
                         <div className=" max-w-md">
-      <div className="mb-6">
-        <h2 className="text-gray-500 text-lg font-medium mb-3">Specialization</h2>
-        <ul className="list-disc pl-6 space-y-1">
-          <li className="text-gray-700">Hatha Yoga</li>
-          <li className="text-gray-700">Vinyasa Yoga</li>
-          <li className="text-gray-700">Ashtanga Yoga</li>
-        </ul>
-        <p className="text-right mt-1">
-          <a href="#" className="text-gray-500 text-sm">More</a>
-        </p>
-      </div>
-      
-      <div className="mt-6">
-        <h2 className="text-gray-500 text-lg font-medium mb-3">Experience</h2>
-        <p className="text-gray-700">5 Year of Experience</p>
-      </div>
-    </div>
+                          <div className="mb-6">
+                            <h2 className="text-gray-500 text-lg font-medium mb-3">
+                              Specialization
+                            </h2>
+                            <ul className="list-disc pl-6 space-y-1">
+                              <li className="text-gray-700">Hatha Yoga</li>
+                              <li className="text-gray-700">Vinyasa Yoga</li>
+                              <li className="text-gray-700">Ashtanga Yoga</li>
+                            </ul>
+                            <p className="text-right mt-1">
+                              <a href="#" className="text-gray-500 text-sm">
+                                More
+                              </a>
+                            </p>
+                          </div>
+
+                          <div className="mt-6">
+                            <h2 className="text-gray-500 text-lg font-medium mb-3">
+                              Experience
+                            </h2>
+                            <p className="text-gray-700">
+                              5 Year of Experience
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -146,7 +147,8 @@ function Main() {
                       icon="ExternalLink"
                       className="w-4 h-4 mr-2 stroke-[1.3]"
                     />{" "}
-View Full Profile                  </Button>
+                    View Full Profile{" "}
+                  </Button>
                 </div>
               </div>
             </div>
@@ -155,69 +157,68 @@ View Full Profile                  </Button>
                 Profile Info
               </div>
               <div className="grid m-5 grid-cols-1 md:grid-cols-2 gap-5">
-  <div className="p-5 box box--stacked h-full">
-    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-      <div className="text-base text-slate-500">Languages</div>
-    </div>
-    <div className="flex items-center mb-8">
-      <ul className="list-disc pl-5 space-y-2">
-        <li className="text-gray-800">Hindi</li>
-        <li className="text-gray-800">English</li>
-        <li className="text-gray-800">Punjabi</li>
-      </ul>
-    </div>
-  </div>
-  <div className="p-5 box box--stacked h-full">
-    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-      <div className="text-base text-slate-500">Languages</div>
-    </div>
-    <div className="flex items-center mb-8">
-      <ul className="list-disc pl-5 space-y-2">
-        <li className="text-gray-800">Hindi</li>
-        <li className="text-gray-800">English</li>
-        <li className="text-gray-800">Punjabi</li>
-      </ul>
-    </div>
-  </div>
-  <div className="p-5 box box--stacked h-full">
-    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-      <div className="text-base text-slate-500">Languages</div>
-    </div>
-    <div className="flex items-center mb-8">
-      <ul className="list-disc pl-5 space-y-2">
-        <li className="text-gray-800">Hindi</li>
-        <li className="text-gray-800">English</li>
-        <li className="text-gray-800">Punjabi</li>
-      </ul>
-    </div>
-  </div>
-  <div className="p-5 box box--stacked h-full">
-    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-      <div className="text-base text-slate-500">Languages</div>
-    </div>
-    <div className="flex items-center mb-8">
-      <ul className="list-disc pl-5 space-y-2">
-        <li className="text-gray-800">Hindi</li>
-        <li className="text-gray-800">English</li>
-        <li className="text-gray-800">Punjabi</li>
-      </ul>
-    </div>
-  </div>
-  {/* Centering the last single box */}
-  <div className="p-5 box box--stacked h-full md:col-span-2 md:w-1/2 md:mx-auto">
-    <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
-      <div className="text-base text-slate-500">Languages</div>
-    </div>
-    <div className="flex items-center mb-8">
-      <ul className="list-disc pl-5 space-y-2">
-        <li className="text-gray-800">Hindi</li>
-        <li className="text-gray-800">English</li>
-        <li className="text-gray-800">Punjabi</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
+                <div className="p-5 box box--stacked h-full">
+                  <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                    <div className="text-base text-slate-500">Languages</div>
+                  </div>
+                  <div className="flex items-center mb-8">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li className="text-gray-800">Hindi</li>
+                      <li className="text-gray-800">English</li>
+                      <li className="text-gray-800">Punjabi</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="p-5 box box--stacked h-full">
+                  <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                    <div className="text-base text-slate-500">Languages</div>
+                  </div>
+                  <div className="flex items-center mb-8">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li className="text-gray-800">Hindi</li>
+                      <li className="text-gray-800">English</li>
+                      <li className="text-gray-800">Punjabi</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="p-5 box box--stacked h-full">
+                  <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                    <div className="text-base text-slate-500">Languages</div>
+                  </div>
+                  <div className="flex items-center mb-8">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li className="text-gray-800">Hindi</li>
+                      <li className="text-gray-800">English</li>
+                      <li className="text-gray-800">Punjabi</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="p-5 box box--stacked h-full">
+                  <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                    <div className="text-base text-slate-500">Languages</div>
+                  </div>
+                  <div className="flex items-center mb-8">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li className="text-gray-800">Hindi</li>
+                      <li className="text-gray-800">English</li>
+                      <li className="text-gray-800">Punjabi</li>
+                    </ul>
+                  </div>
+                </div>
+                {/* Centering the last single box */}
+                <div className="p-5 box box--stacked h-full md:col-span-2 md:w-1/2 md:mx-auto">
+                  <div className="pb-5 border-b border-dashed mb-7 border-slate-300/70">
+                    <div className="text-base text-slate-500">Languages</div>
+                  </div>
+                  <div className="flex items-center mb-8">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li className="text-gray-800">Hindi</li>
+                      <li className="text-gray-800">English</li>
+                      <li className="text-gray-800">Punjabi</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
               <div className="border-t my-3 border-dashed rounded-[0.6rem] border-slate-300/80">
                 <div className="flex gap-x-4 mt-3 justify-end mb-2 flex-col sm:flex-row gap-x-3 gap-y-2 md:ml-auto">
@@ -302,7 +303,7 @@ View Full Profile                  </Button>
                         <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
-                             mandi, West Delhi, 247776
+                            mandi, West Delhi, 247776
                           </div>
                         </div>
                       </div>
@@ -336,7 +337,7 @@ View Full Profile                  </Button>
                         <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
-                             mandi, West Delhi, 247776
+                            mandi, West Delhi, 247776
                           </div>
                         </div>
                       </div>
@@ -370,7 +371,7 @@ View Full Profile                  </Button>
                         <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
-                             mandi, West Delhi, 247776
+                            mandi, West Delhi, 247776
                           </div>
                         </div>
                       </div>
@@ -380,8 +381,6 @@ View Full Profile                  </Button>
               </Tab.Panels>
             </Tab.Group>
           </div>
-
-         
         </div>
       </div>
     </div>

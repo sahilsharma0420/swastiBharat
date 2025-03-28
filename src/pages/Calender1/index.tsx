@@ -96,7 +96,7 @@ function Main() {
                         <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
-                             mandi, West Delhi, 247776
+                            mandi, West Delhi, 247776
                           </div>
                         </div>
                       </div>
@@ -130,7 +130,7 @@ function Main() {
                         <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
-                             mandi, West Delhi, 247776
+                            mandi, West Delhi, 247776
                           </div>
                         </div>
                       </div>
@@ -164,7 +164,7 @@ function Main() {
                         <div className="flex-1 border-dashed border-r last:border-0">
                           <div className="text-slate-500">
                             Tilak Nagar, near community center ,near sabji
-                             mandi, West Delhi, 247776
+                            mandi, West Delhi, 247776
                           </div>
                         </div>
                       </div>

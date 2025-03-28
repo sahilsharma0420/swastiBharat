@@ -73,6 +73,7 @@ import Category from "../pages/Category"
 import Cardpage from "../pages/CardPage"
 import Schedule from "../pages/Schedule"
 import HelpCenter from "../pages/HelpCenter"
+import CategoryList from "../pages/Categorylist"
 function Router() {
   const routes = [
     {
@@ -360,6 +361,10 @@ function Router() {
     {
       path: "/schedule",
       element: <Schedule />,
+    },
+    {
+      path: "/categoryList",
+      element: <CategoryList/>,
     },
     {
       path: "/helpCenter",
